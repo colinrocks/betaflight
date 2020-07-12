@@ -1,0 +1,48 @@
+# feature ESC_SENSOR
+Enabled ESC_SENSOR
+
+# serial 5 1024 115200 57600 0 115200
+serial 5 1024 115200 57600 0 115200
+
+# set gyro_lowpass2_hz = 325
+gyro_lowpass2_hz set to 325
+# set dyn_notch_range = HIGH
+dyn_notch_range set to HIGH
+# set dyn_notch_width_percent = 6
+dyn_notch_width_percent set to 6
+# set dyn_notch_q = 250
+dyn_notch_q set to 250
+# set dyn_notch_min_hz = 100
+dyn_notch_min_hz set to 100
+# set dyn_lpf_gyro_min_hz = 260
+dyn_lpf_gyro_min_hz set to 260
+# set dyn_lpf_gyro_max_hz = 650
+dyn_lpf_gyro_max_hz set to 650
+# set acc_calibration = -66,48,-271
+acc_calibration set to -66,48,-271
+# set dyn_lpf_dterm_min_hz = 91
+dyn_lpf_dterm_min_hz set to 91
+# set dyn_lpf_dterm_max_hz = 221
+dyn_lpf_dterm_max_hz set to 221
+# set dterm_lowpass2_hz = 195
+dterm_lowpass2_hz set to 195
+# set p_pitch = 64
+p_pitch set to 64
+# set d_pitch = 58
+d_pitch set to 58
+# set f_pitch = 100
+f_pitch set to 100
+# set f_roll = 100
+f_roll set to 100
+# set p_yaw = 100
+p_yaw set to 100
+# set i_yaw = 100
+i_yaw set to 100
+# set f_yaw = 100
+f_yaw set to 100
+# set d_min_roll = 50
+d_min_roll set to 50
+# set d_min_pitch = 50
+d_min_pitch set to 50
+
+

@@ -1,0 +1,111 @@
+# Betaflight / BETAFLIGHTF3 (BFF3) 3.4.0 Jun 24 2018 / 09:40:07 (1c081ae8c) MSP API: 1.39
+
+name tinyrocks340
+
+feature -TELEMETRY
+feature -ANTI_GRAVITY
+feature MOTOR_STOP
+beeper -GYRO_CALIBRATED
+beeper -RX_LOST
+beeper -RX_LOST_LANDING
+beeper -DISARMING
+beeper -ARMING
+beeper -ARMING_GPS_FIX
+beeper -BAT_CRIT_LOW
+beeper -BAT_LOW
+beeper -GPS_STATUS
+beeper -RX_SET
+beeper -ACC_CALIBRATION
+beeper -ACC_CALIBRATION_FAIL
+beeper -READY_BEEP
+beeper -DISARM_REPEAT
+beeper -ARMED
+beeper -SYSTEM_INIT
+beeper -ON_USB
+beeper -BLACKBOX_ERASE
+beeper -CRASH FLIP
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSED
+aux 0 0 0 1475 2100 0
+aux 1 1 0 1475 1575 0
+aux 2 2 0 1575 1675 0
+aux 3 19 1 950 1075 0
+set acc_calibration = -83,10,-9
+set rc_interp = OFF
+set motor_pwm_rate = 4000
+set thr_corr_value = 10
+set bat_capacity = 260
+set vbat_max_cell_voltage = 45
+set vbat_min_cell_voltage = 29
+set vbat_warning_cell_voltage = 29
+set ibata_scale = 800
+set small_angle = 180
+set deadband = 10
+set yaw_deadband = 10
+set osd_rssi_alarm = 0
+set osd_cap_alarm = 220
+set osd_tim1 = 0
+set osd_tim2 = 1
+set osd_vbat_pos = 2497
+set osd_rssi_pos = 442
+set osd_tim_1_pos = 54
+set osd_tim_2_pos = 2519
+set osd_flymode_pos = 333
+set osd_throttle_pos = 225
+set osd_vtx_channel_pos = 377
+set osd_crosshairs_pos = 2253
+set osd_ah_pos = 2126
+set osd_current_pos = 385
+set osd_mah_drawn_pos = 2503
+set osd_craft_name_pos = 364
+set osd_gps_speed_pos = 218
+set osd_gps_lon_pos = 82
+set osd_gps_lat_pos = 65
+set osd_gps_sats_pos = 51
+set osd_home_dir_pos = 430
+set osd_home_dist_pos = 303
+set osd_compass_bar_pos = 42
+set osd_altitude_pos = 247
+set osd_pid_roll_pos = 423
+set osd_pid_pitch_pos = 455
+set osd_pid_yaw_pos = 487
+set osd_debug_pos = 1
+set osd_power_pos = 321
+set osd_pidrate_profile_pos = 345
+set osd_warnings_pos = 2121
+set osd_avg_cell_voltage_pos = 76
+set osd_pit_ang_pos = 2241
+set osd_rol_ang_pos = 2264
+set osd_battery_usage_pos = 392
+set osd_disarmed_pos = 2091
+set osd_nheading_pos = 311
+set osd_nvario_pos = 279
+set osd_esc_tmp_pos = 82
+set osd_esc_rpm_pos = 83
+set osd_stat_tim_1 = ON
+set osd_stat_endbatt = ON
+set osd_stat_min_rssi = OFF
+set osd_stat_max_curr = OFF
+set osd_stat_bbox = OFF
+set osd_stat_bb_no = OFF
+profile 1
+
+set dterm_notch_cutoff = 0
+set vbat_pid_gain = ON
+set setpoint_relax_ratio = 20
+set dterm_setpoint_weight = 0
+set p_pitch = 100
+set i_pitch = 85
+set d_pitch = 45
+set p_roll = 80
+set i_roll = 85
+set d_roll = 45
+set p_yaw = 180
+rateprofile 0
+
+set thr_expo = 25
+set yaw_rc_rate = 75
+set roll_srate = 80
+set pitch_srate = 80
+set yaw_srate = 80
+

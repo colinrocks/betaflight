@@ -1,0 +1,38 @@
+
+
+http://blog.oscarliang.net/cleanflight-naze32-setup/
+
+SET LOOPTIME = 2500 – (~400Hz, but if you have softserial features enabled such as GPS, they uses a lot of processing power, so you might have to increase looptime)
+SET ACC_LPF_FACTOR = 100
+FEATURE RX_PPM – If your radio support PPM, you can enabled PPM on your board, so only one signal connection is required for 8 channels. Another advantage of PPM is you can free up the pins for other serial devices such as GPS.
+FEATURE FAILSAFE – You can set failsafe on the board and/or your radio receiver (if supported). If you use failsafe, it’s best to have failsafe enabled on both FC and receiver just in case your connection is lost between receiver and FC.
+FEATURE MOTOR_STOP – The motors will stop when throttle is zero, they don’t spin after arming.
+SET DISARM_KILL_SWITCH = 1 – This allows you to arm/disarm your quad with a switch. Set it to 0 if you want to arm using stick (Yaw).
+SET ALIGN_BOARD_YAW=90 (ARROW POINTING RIGHT) – When mounted the board the normal way, it’s hard to get access to the USB port on a mini quad frame. You can rotate the board  left or right for easy access. You can tell the board you rotated it using this commands.
+
+
+Update 20 April 2015: Looptime – I am now using Oneshot on my Blue Series ESC, with PID controller 2, I am able to lower looptime to 1200!!! :D (the lowest it can go) it flies like a dream!
+
+
+
+MIN_COMMAND – lowest throttle value the flight controller can use, you should set it to the lowest value of your throttle. Note: When the FC is not armed, it will by default use the value of MINCOMMAND if your throttle is lower than MAXCHECK. You can use this command to simulate a max and min throttle signal, to calibrate ESCs. Default is 1000.
+
+MIN_THROTTLE – the lowest throttle value that turns the motors on. If this number is set lower than the motors can reliably spin, it can cause the motors to stop spinning when hard yawing or during quick flips and rolls. This would cause loss of stability and control. Default is 1150.
+
+MAX_THROTTLE – Your full throttle setting. Should match what your ESCS are calibrated for. Can be set a little lower if you want to have room for the motors to maintain balance and adjust speed at full throttle.
+
+MAX_CHECK – Throttle must reach this number for stick commands while disarmed. Keep mincheck and maxcheck close to the endpoints of your throttle.
+
+MIN_CHECK – When armed, if your throttle pass this value, MINTHROTTLE will be used instead, and motor will start spinning.
+
+
+Oscar's PIDs (looptime 2500)
+Roll  4.5 // 0.045 // 50
+Pitch 5.1 // 0.048 // 42
+Yaw   10.0 // 0.055 // 18
+TPA:  0.60
+RC rate 1.0
+RC expo 0.60
+Roll Pitch Rate 0.4
+Yaw Rate 0.65
+

@@ -1,0 +1,27 @@
+Motor Centres:
+197mm (s2s, 4-2, 3-1)
+155mm (f2b, 4-3, 2-1)
+
+set deadband=2
+
+
+Cleanflight:
+
+mixer custom
+cmix reset
+cmix 1 1 -1 0.787 -1
+cmix 2 1 -1 -0.787 1
+cmix 3 1 1 0.787 1
+cmix 4 1 1 -0.787 -1
+save
+
+Cleanflight 1.10+
+
+mixer custom
+mmix reset
+mmix 0 1 -1 0.787 -1
+mmix 1 1 -1 -0.787 1
+mmix 2 1 1 0.787 1
+mmix 3 1 1 -0.787 -1
+save
+

@@ -1,0 +1,16 @@
+
+Set up CMIX!
+Set up DEADBAND!
+
+Start with P=4, I=0.02, D=15
+
+Increase P until starts to wobble oscillate on hard tilt
+
+Good hovering with P = 7
+
+Better fall arrest wit P = 6.5, I = 0.018
+
+
+
+
+
