@@ -1,0 +1,56 @@
+set gyro_lowpass_hz = 100
+set gyro_lowpass2_hz = 100
+set dyn_notch_range = AUTO
+set dyn_notch_width_percent = 0
+set dyn_notch_q = 250
+set dyn_notch_min_hz = 100
+set dyn_lpf_gyro_min_hz = 0
+set dyn_lpf_gyro_max_hz = 1000
+
+set fpv_mix_degrees = 24
+set airmode_start_throttle_percent = 45
+
+set dshot_idle_value = 450
+set motor_poles = 12
+set small_angle = 180
+set pid_process_denom = 1
+set runaway_takeoff_prevention = OFF
+set thrust_linear = 50
+set gyro_rpm_notch_harmonics = 2
+
+profile 0
+
+# profile 0
+set dyn_lpf_dterm_min_hz = 0
+set dyn_lpf_dterm_max_hz = 306
+set dterm_lowpass_hz = 100
+set dterm_lowpass2_hz = 200
+set vbat_pid_gain = ON
+set iterm_relax_type = GYRO
+set p_pitch = 90
+set i_pitch = 25
+set d_pitch = 65
+set f_pitch = 100
+set p_roll = 85
+set i_roll = 25
+set d_roll = 65
+set f_roll = 100
+set p_yaw = 95
+set i_yaw = 25
+set f_yaw = 100
+set angle_level_strength = 110
+set horizon_level_strength = 30
+set horizon_transition = 80
+set level_limit = 70
+set horizon_tilt_effect = 80
+set horizon_tilt_expert_mode = ON
+set abs_control_gain = 20
+set d_min_roll = 0
+set d_min_pitch = 0
+set d_min_boost_gain = 80
+set d_min_advance = 40
+
+
+
+
+
